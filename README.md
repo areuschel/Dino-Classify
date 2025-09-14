@@ -29,4 +29,8 @@ This project involves the use of images collected from a microscope of samples o
 
 #### Week 1: Intro Meeting
 
-_Tasks_ : Send client gmails for photo access, research image classifier packages, test out sample images, setup github
+_Tasks_ : 
+- Send client gmails for photo access
+- Research image classifier packages
+- Test out sample images
+- Setup github
