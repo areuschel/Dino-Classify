@@ -1,5 +1,5 @@
 # Dino-Classify
-Graduate Consulting Work
+STAT 495 - Consulting
 
 ![dino-banner](dino-banner.png)
 
