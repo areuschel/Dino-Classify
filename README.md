@@ -3,6 +3,10 @@ Graduate Consulting Work
 
 ![dino-banner](dino-banner.png)
 
+## Table of Contents
+- [Project Description](#project-description)
+- [Team Updates](#team-updates)
+
 ## Project Description
 This project involves the use of images collected from a microscope of samples of microvertebrate (<2cm) fossils from the late Cretaceous (~66 million years ago).  These samples are collected from sediment that has been screenwashed to include both rock and fossil material of comparable sizes. The current method for finding these fossils is to manually sit at a microscope and sort rock from fossil. This project will utilize images that were captured and then labeled to identify real fossils identified by the lab to use for ML training.
 
