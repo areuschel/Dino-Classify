@@ -1,0 +1,31 @@
+fossil-classifier/
+├── data/
+│   ├── raw/            # original images (untouched, read-only)
+│   ├── processed/      # preprocessed images, ready for training
+│   └── external/       # other datasets if needed (maybe use in testing)
+│
+├── notebooks/          # notebooks for exploration/prototyping... we will use these for the time being
+│   ├── 01_data_exploration.ipynb # just examples
+│   ├── 02_preprocessing.ipynb
+│   └── 03_model_baseline.ipynb
+│
+├── src/                # source code (modularized functions & classes)
+│   ├── __init__.py
+│   ├── data/           # data handling & preprocessing
+│   │   ├── __init__.py
+│   │   └── preprocess.py
+│   ├── models/         # model architectures, training, evaluation
+│   │   ├── __init__.py
+│   │   ├── train.py
+│   │   └── evaluate.py
+│   └── predict.py      # Script to run inference on new images
+│
+├── tests/              # Unit tests for src/ code
+│   └── test_preprocess.py
+│
+├── docs/               # Documentation, design decisions, team notes
+│   └── file-structure-desc.txt # this document lol
+│
+├── .gitignore          # Ignore data, DS_store, outputs
+├── requirements.txt    # Python dependencies
+├── README.md           # Project overview
