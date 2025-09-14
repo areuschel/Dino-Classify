@@ -1,0 +1,18 @@
+# macOS system files
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and outputs
+*.log
+*.out
+*.tmp
+
+# Data (keep raw/processed datasets local; don't push to GitHub)
+data/raw/
+data/processed/
+data/external/
