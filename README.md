@@ -6,6 +6,7 @@ STAT 495 - Consulting
 ## Table of Contents
 - [Project Description](#project-description)
 - [Team Updates](#team-updates)
+- [Presentations](#presentations)
 
 ## Project Description
 This project involves the use of images collected from a microscope of samples of microvertebrate (<2cm) fossils from the late Cretaceous (~66 million years ago).  These samples are collected from sediment that has been screenwashed to include both rock and fossil material of comparable sizes. The current method for finding these fossils is to manually sit at a microscope and sort rock from fossil. This project will utilize images that were captured and then labeled to identify real fossils identified by the lab to use for ML training.
@@ -34,3 +35,8 @@ _Tasks_ :
 - Research image classifier packages
 - Test out sample images
 - Setup github
+
+### Presentations
+
+You can view/edit the Google Slides here:  
+[Open Presentation]([https://docs.google.com/presentation/d/1TVby_HnIL1BSqE3vVCfECwQlJAqzh5b1d8jHu6W0c6s/edit?slide=id.p#slide=id.p])
