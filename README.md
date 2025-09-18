@@ -39,4 +39,4 @@ _Tasks_ :
 ### Presentations
 
 You can view/edit the Google Slides here:  
-[Open Presentation]([https://docs.google.com/presentation/d/1TVby_HnIL1BSqE3vVCfECwQlJAqzh5b1d8jHu6W0c6s/edit?slide=id.p#slide=id.p])
+[Open Presentation](https://docs.google.com/presentation/d/1TVby_HnIL1BSqE3vVCfECwQlJAqzh5b1d8jHu6W0c6s/edit?slide=id.p#slide=id.p)
