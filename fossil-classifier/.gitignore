@@ -12,7 +12,3 @@ __pycache__/
 *.out
 *.tmp
 
-# Data (keep raw/processed datasets local; don't push to GitHub)
-data/raw/
-data/processed/
-data/external/
