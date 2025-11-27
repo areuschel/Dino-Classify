@@ -36,7 +36,39 @@ _Tasks_ :
 - Test out sample images
 - Setup github
 
+#### Weeks 2-5: Early Dev
+
+_Tasks_ : 
+- Research classification models
+- Select and crop fossil photos from lab
+- Find online rock image datasets
+- Initial model testing: EfficientNet (B0)
+
+#### Weeks 6-9: Model Testing with New Data
+
+_Tasks_ : 
+- Preprocess lab rock photos and add to full dataset
+- Adrian: Test EfficientNet (B1-B4)
+- Leah: Test ResNet
+- Kevin: Test 3rd Model
+
+#### Weeks 10-11: Best Model Selection and Next Steps
+
+_Tasks_ : 
+- Add lab rock photos to full dataset
+- Adrian: Test EfficientNet (B1-B4)
+- Leah: Test ResNet
+- Kevin: Test 3rd Model
+
 ### Presentations
 
+#### Update 1
 You can view/edit the Google Slides here:  
 [Open Presentation](https://docs.google.com/presentation/d/1TVby_HnIL1BSqE3vVCfECwQlJAqzh5b1d8jHu6W0c6s/edit?slide=id.p#slide=id.p)
+
+#### Update 2
+You can view/edit the Google Slides here:  
+[Open Presentation](https://docs.google.com/presentation/d/1ZlzcpUQIlzCqAjB8Ux4e5tp4LtQIhgwVeG6PKpmwAA4/edit?usp=sharing)
+
+#### Final Update
+
