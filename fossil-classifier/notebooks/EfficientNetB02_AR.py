@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Oct 20 09:06:19 2025
+Created on Thu Nov 27 12:03:55 2025
 
 @author: areuschel
 """
-
-# Rocks Data Source
-#### https://www.kaggle.com/datasets/neelgajare/rocks-dataset?resource=download
 
 
 # Imports
@@ -22,12 +19,34 @@ import matplotlib.pyplot as plt
 # Load Data
 
 import os
-data_dir = os.path.expanduser("~/Desktop/SplitData1020")
+
+
+#### ------------ Data from first model, EfficientNet_AR.py ------- ####
+## Rock photos obtained from online sources
+
+## data_dir = os.path.expanduser("~/Desktop/SplitData1020")
+
+
+#### ------------ New Data, Rock Lab Photos ----------------------- ####
+
+data_dir = os.path.expanduser("~/Desktop/SplitData1127")
 
 ## Train, validation, test
 
 train_ds = image_dataset_from_directory(
     os.path.join(data_dir, "train"),
+    image_size=(224, 224),
+    batch_size=32,
+    color_mode = "rgb"
+)
+
+
+# checking
+print(train_ds.class_names)
+
+
+test_ds = image_dataset_from_directory(
+    os.path.join(data_dir, "test"),
     image_size=(224, 224),
     batch_size=32,
     color_mode = "rgb"
@@ -40,16 +59,6 @@ val_ds = image_dataset_from_directory(
     color_mode = "rgb"
 )
 
-# checking
-print(val_ds.class_names)
-
-
-test_ds = image_dataset_from_directory(
-    os.path.join(data_dir, "test"),
-    image_size=(224, 224),
-    batch_size=32,
-    color_mode = "rgb"
-)
 
 
 # pretrained model from efficientNet not accepting RGB weights. try training from scratch
@@ -67,10 +76,9 @@ model = models.Sequential([
 
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
-## Train on subset
+## Train
 
-history = model.fit(train_ds, validation_data=val_ds, epochs=10)
-
+history = model.fit(train_ds, validation_data = val_ds, epochs=10)
 
 # 
 
