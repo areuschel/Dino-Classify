@@ -71,4 +71,7 @@ You can view/edit the Google Slides here:
 [Open Presentation](https://docs.google.com/presentation/d/1ZlzcpUQIlzCqAjB8Ux4e5tp4LtQIhgwVeG6PKpmwAA4/edit?usp=sharing)
 
 #### Final Update
+You can view/edit the Google Slides here:  
+[Open Presentation](https://docs.google.com/presentation/d/1hev3tfOiXWAoA0GExZ1EYYRqZNM1sGoqMILOJJpo5PY/edit?usp=sharing)
+
 
