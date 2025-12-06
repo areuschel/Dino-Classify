@@ -18,35 +18,95 @@ format:
 editor: visual
 ---
 
+\newpage
+
 # Recommendations for Data Collection
 
 ## Example Images
 
+The existing photos received from The Whitney Lab came from three folders: "TBD Microfossils", "Completed Microfossils", and "Burke Microfossils". The "Completed Microfossils" folder had the cleanest images and most consistent format. Figure 1 below shows a glimpse of the variety in resolution, background, aspect ratio, and miscellaneous objects.
 
+![Existing Images](raw_images_lab.png){width="85%"}
+
+We used the following selection criteria when building our training and testing sets:
+
+-   Background: White or black
+
+-   Focus: Image could be cropped to contain only the fossil
+
+-   Resolution: No strict guideline, as long as features can be seen reasonably
+
+-   Distance: No strict guideline, as long as features can be seen reasonably
+
+You can view examples of what we did and did not include in our final dataset in Figures 2 and 3. \newpage
+
+### Good Images
+
+![Images Selected for Modeling](ex_good.png){width="85%"}
+
+### Not-so-good Images
+
+![Images not Selected for Modeling](ex_bad.png){width="85%"}
+
+\newpage
+
+## Steps for Image Cleaning
+
+1.  Using the guidelines outlined above, select images.
+
+2.  If needed, crop the image to remove miscellaneous objects or increase visibility of features.
+
+### Example
+
+![Image Cleaning](ex_crop.png){width="90%"}
 
 ## Creating a Balanced Dataset
 
+For image detection and classification models, it is best to have a high number of images with balanced classes (fossils and rocks). This is to try to prevent model bias towards whichever class is found more frequently in the data. More information on why this matters and how to deal with imbalanced data can be found in the **Research Findings** and **Helpful Links & Resources** sections.
 
-
+The Whitney Lab can help increase the accuracy of models by collecting more photos of rocks and fossils, keeping in mind that we want approximately an equal number in each category. We can increase sample size by using online images, however, we believe that the model will be strongest and most useful if trained primarily on the rocks and fossils collected from dig sites or regions the lab is interested in studying. For a robust model, it's recommended to have at least 1,000 images per class.
 
 \newpage
+
 # Proposed Data Storage
 
 ## Folder Structure
-## File Naming Conventions
+
+The following structure is proposed to organize both existing and modeling-ready images for the lab fossils project. 
+
+- **`raw/`** 
+  contains all existing images for archival purposes
+- **`Images_for_Modeling/`** 
+  contains images prepared for training and classification, separated by class (class1 = fossil, class2 = rock)
+
+
+![](folder.png){width=100%}
+
+\begin{verbatim}
+raw/
+    TBD Microfossils/
+    Completed Microfossils/
+    Burke Microfossils/
+
+Images_for_Modeling/
+    class1/ 
+    class2/ 
+\end{verbatim}
+
+
 
 \newpage
+
 # Research Findings
 
 ## Computer Vision Models
+
 ## Performance Metrics
 
 \newpage
+
 # Helpful Links & Resources
 
+For more on balanced data, and dataset size:
 
-
-
-
-
-
+[Roboflow: Training Data Best Practices](https://blog.roboflow.com/how-much-training-data/)
