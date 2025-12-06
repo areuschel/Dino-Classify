@@ -1,0 +1,52 @@
+---
+title: "Recommendations for The Whitney Lab"
+subtitle: "Fossil Computer Vision Modeling"
+author: "Adrian Reuschel, Leah Boger, Kevin Rabinak"
+date: "2025-12-05"
+abstract: |
+  This document was prepared for Dr. Megan Whitney by graduate students in STAT495: Data Science Consulting. Students worked with lab images of fossils to build and research image classifier and detection models. This report includes recommendations for data collection, organization, and long-term storage, along with example images and a proposed folder architecture. We also provide a concise overview of the neural network models evaluated during the project.
+format:
+  pdf:
+    geometry: 
+      - left=1.5in 
+      - right=1.5in
+      - top=1in
+      - bottom=1in
+    toc: true   
+    toc-depth: 3   
+    number-sections: true
+editor: visual
+---
+
+# Recommendations for Data Collection
+
+## Example Images
+
+
+
+## Creating a Balanced Dataset
+
+
+
+
+\newpage
+# Proposed Data Storage
+
+## Folder Structure
+## File Naming Conventions
+
+\newpage
+# Research Findings
+
+## Computer Vision Models
+## Performance Metrics
+
+\newpage
+# Helpful Links & Resources
+
+
+
+
+
+
+
