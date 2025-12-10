@@ -72,15 +72,12 @@ The Whitney Lab can help increase the accuracy of models by collecting more phot
 
 ## Folder Structure
 
-The following structure is proposed to organize both existing and modeling-ready images for the lab fossils project. 
+The following structure is proposed to organize both existing and modeling-ready images for the lab fossils project.
 
-- **`raw/`** 
-  contains all existing images for archival purposes
-- **`Images_for_Modeling/`** 
-  contains images prepared for training and classification, separated by class (class1 = fossil, class2 = rock)
+-   **`raw/`** contains all existing images for archival purposes
+-   **`Images_for_Modeling/`** contains images prepared for training and classification, separated by class (class1 = fossil, class2 = rock)
 
-
-![](folder.png){width=100%}
+![](folder.png){width="100%"}
 
 \begin{verbatim}
 raw/
@@ -93,20 +90,62 @@ Images_for_Modeling/
     class2/ 
 \end{verbatim}
 
-
-
 \newpage
 
 # Research Findings
 
 ## Computer Vision Models
 
+We compared three classification models on the provided data. The primary objective of a classification model is to predict the class of a single object given an image of that object.
+
+The long-term goal is to develop a detection model, which can identify and classify multiple objects within a single image. Detection models typically build upon classification models, so it is crucial first to determine which classification model performs best. Selecting the strongest classification model provides a solid foundation for future work in object detection.
+
+Models Tested:
+
+-   **`EfficientNet`**
+
+-   **`ResNet50`**
+
+-   **`InceptionV3`**
+
 ## Performance Metrics
 
-\newpage
+**EfficientNet**
+
+-   Highest fossil recall (0.94)
+
+-   decent accuracy (0.65)
+
+-   This model can identify almost all fossils correctly, but classifies \~50% of rocks as fossils. essentially, at this point, it could help rule out about half of rocks
+
+**ResNet50**
+
+-   lowest fossil recall (0.67)
+
+-   poor accuracy (0.30)
+
+-   This model is not much better than guessing
+
+**InceptionV3**
+
+-   high fossil recall (0.89)
+
+-   highest accuracy (0.93)
+
+-   This model has the highest overall accuracy, but misses some fossils.
+
+**Takeaways**: EfficientNet and InceptionV3 are the most promising model types. After obtaining more data, these models should be explored more thoroughly. ResNet50 can be ruled out as a good model for this project.
 
 # Helpful Links & Resources
 
 For more on balanced data, and dataset size:
 
 [Roboflow: Training Data Best Practices](https://blog.roboflow.com/how-much-training-data/)
+
+For more on the classification models tested:
+
+[EfficientNet](https://www.geeksforgeeks.org/computer-vision/efficientnet-architecture/)
+
+[ResNet50](https://www.geeksforgeeks.org/computer-vision/image-classification-using-resnet/)
+
+[InceptionV3](https://www.geeksforgeeks.org/machine-learning/inception-v2-and-v3-inception-network-versions/)
